@@ -1,0 +1,109 @@
+$navbar-border-radius: 0;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "jquery.fancybox";
+
+$blue: #0084c7;
+$pink: #ff1b90;
+$grey: #333333;
+
+body{
+  color: $grey;
+}
+
+a {
+  color: $pink;
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  height:80px;
+  background-color: $pink;
+  border: 0;
+  margin: 0;
+  position: fixed;
+  width:100%;
+  z-index: 999;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+    color: #eeeeee;
+    font-size: 1.15em;
+}
+
+.navbar-brand img {
+  margin-top: 25px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: $blue;
+}
+
+.text-primary {
+  color: $blue;
+}
+
+.cover{
+  position:relative;
+  height:780px;
+  overflow: hidden;
+
+  .cover-image {
+    top: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    height:100%;;
+
+    &.image1 {
+      background-image: url('cover.jpg');
+    }
+
+    &.image2 {
+      background-image: url('cover2.jpg');
+    }
+  }
+}
+
+.team {
+  .row {
+    margin: 30px 0;
+
+    .avatar {
+      margin: 20px 0 ;
+    }
+  }
+}
+
+.sponsor-section{
+  margin-top:30px;
+  background-color: $grey;
+
+}
+
+.sponsor-section .logo {
+  height:150px;
+  line-height: 100px;
+  padding-top: 25px;
+
+}
+
+footer {
+  background-color: $pink;
+}
+
+footer p {
+  margin:10px 0;
+  color: #eeeeee;
+  font-size:0.8em;
+}
