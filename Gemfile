@@ -37,6 +37,14 @@ gem 'fancybox2-rails', '~> 0.2.8'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'capistrano' #, '~> 3.2'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-passenger'
+end
+
+group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
